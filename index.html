@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte • Futuro Sustentável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: system-ui, sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(22, 101, 52, 0.55), rgba(22, 101, 52, 0.35)), url('https://picsum.photos/id/1018/2000/1200');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll; /* CORRIGIDO para celular */
+        }
+        .card-hover { transition: all 0.4s ease; }
+        .card-hover:hover { transform: translateY(-10px); }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-emerald-700 rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-leaf text-white"></i>
+                </div>
+                <span class="font-bold text-2xl">Agro <span class="text-emerald-700">Forte</span></span>
+            </div>
+            
+            <div class="hidden md:flex gap-x-8 text-sm font-medium">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#pilares" class="nav-link">Pilares</a>
+                <a href="#conexao" class="nav-link">A Conexão</a>
+                <a href="#impacto" class="nav-link">Impacto</a>
+                <a href="#futuro" class="nav-link">Futuro</a>
+                <a href="#quiz" class="nav-link text-emerald-700 font-semibold">Quiz</a>
+            </div>
+            
+            <a href="#junte-se" class="px-5 py-2 bg-emerald-700 text-white rounded-3xl text-sm font-semibold">Participe</a>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-4">
+            <div class="flex flex-col gap-y-3 text-sm">
+                <a href="#inicio" class="py-1">Início</a>
+                <a href="#pilares" class="py-1">Pilares</a>
+                <a href="#conexao" class="py-1">A Conexão</a>
+                <a href="#impacto" class="py-1">Impacto</a>
+                <a href="#futuro" class="py-1">Futuro</a>
+                <a href="#quiz" class="py-1 text-emerald-700 font-semibold">Quiz</a>
+                <a href="#junte-se" class="mt-2 py-2 bg-emerald-700 text-white text-center rounded-3xl">Participe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="inicio" class="hero-bg min-h-[100dvh] flex items-center">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <h1 class="text-white text-6xl md:text-7xl font-bold tracking-tighter">
+                AGRO FORTE.<br>
+                <span class="text-emerald-300">FUTURO SUSTENTÁVEL.</span>
+            </h1>
+            <p class="mt-6 text-xl text-white/90 max-w-lg">Conectando produção agrícola de excelência com práticas que protegem o planeta.</p>
+            <div class="mt-3 text-emerald-200 font-medium">Feito por <span class="font-semibold">Juan Gustavo</span></div>
+            
+            <div class="mt-8 flex gap-4">
+                <a href="#pilares" class="px-8 py-4 bg-white text-emerald-800 font-semibold rounded-3xl">Conheça os Pilares</a>
+                <a href="#quiz" class="px-8 py-4 border border-white/70 text-white font-semibold rounded-3xl">Fazer o Quiz</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PILARES -->
+    <section id="pilares" class="max-w-screen-2xl mx-auto px-6 py-16">
+        <h2 class="text-center text-4xl font-bold tracking-tighter mb-10">Os 4 Pilares do Agro do Futuro</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card-hover bg-white p-8 rounded-3xl border"><i class="fa-solid fa-microchip text-4xl text-emerald-700 mb-4"></i><h3 class="font-semibold text-xl">Produção Inteligente</h3><p class="mt-2 text-zinc-600">Tecnologia de precisão para produzir mais com menos recursos.</p></div>
+            <div class="card-hover bg-white p-8 rounded-3xl border"><i class="fa-solid fa-water text-4xl text-emerald-700 mb-4"></i><h3 class="font-semibold text-xl">Saúde do Solo e Água</h3><p class="mt-2 text-zinc-600">Práticas regenerativas que mantêm o solo vivo.</p></div>
+            <div class="card-hover bg-white p-8 rounded-3xl border"><i class="fa-solid fa-globe text-4xl text-emerald-700 mb-4"></i><h3 class="font-semibold text-xl">Baixo Carbono</h3><p class="mt-2 text-zinc-600">Redução de emissões e sequestro de carbono.</p></div>
+            <div class="card-hover bg-white p-8 rounded-3xl border"><i class="fa-solid fa-users text-4xl text-emerald-700 mb-4"></i><h3 class="font-semibold text-xl">Comunidades Fortes</h3><p class="mt-2 text-zinc-600">Capacitação e desenvolvimento rural sustentável.</p></div>
+        </div>
+    </section>
+
+    <!-- CONEXÃO -->
+    <section id="conexao" class="bg-white py-16 border-y">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <h2 class="text-center text-4xl font-bold tracking-tighter mb-10">Produção e Sustentabilidade são aliados</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-900 text-white p-10 rounded-3xl">
+                    <h3 class="text-3xl font-bold mb-6">Produção Forte</h3>
+                    <ul class="space-y-2"><li>✓ Alta produtividade com tecnologia</li><li>✓ Exportação de qualidade</li><li>✓ Eficiência nos recursos</li></ul>
+                </div>
+                <div class="bg-emerald-700 text-white p-10 rounded-3xl">
+                    <h3 class="text-3xl font-bold mb-6">Sustentabilidade Real</h3>
+                    <ul class="space-y-2"><li>✓ Solos vivos</li><li>✓ Menos emissões</li><li>✓ Futuro garantido</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACTO -->
+    <section id="impacto" class="max-w-screen-2xl mx-auto px-6 py-16">
+        <h2 class="text-center text-4xl font-bold tracking-tighter mb-10">Nosso Impacto</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-8 rounded-3xl border text-center"><div class="text-6xl font-bold text-emerald-700">42</div><div class="text-sm">Mil toneladas de CO₂ evitadas</div></div>
+            <div class="bg-white p-8 rounded-3xl border text-center"><div class="text-6xl font-bold text-emerald-700">187</div><div class="text-sm">Mil hectares regenerados</div></div>
+            <div class="bg-white p-8 rounded-3xl border text-center"><div class="text-6xl font-bold text-emerald-700">31</div><div class="text-sm">% redução de defensivos</div></div>
+            <div class="bg-white p-8 rounded-3xl border text-center"><div class="text-6xl font-bold text-emerald-700">12400</div><div class="text-sm">Produtores capacitados</div></div>
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="max-w-screen-2xl mx-auto px-6 pb-16">
+        <div class="max-w-2xl mx-auto bg-white border rounded-3xl p-8">
+            <h2 class="text-center text-3xl font-bold mb-6">Quiz: Teste seu conhecimento</h2>
+            
+            <div id="quiz-start">
+                <input type="text" id="user-name" placeholder="Seu nome" class="w-full border rounded-2xl px-6 py-4 mb-4">
+                <button onclick="startQuiz()" class="w-full py-4 bg-emerald-700 text-white font-bold rounded-3xl">Iniciar Quiz</button>
+            </div>
+
+            <div id="quiz-question" class="hidden">
+                <div class="flex justify-between mb-4">
+                    <span id="q-number" class="font-bold"></span>
+                    <span id="q-score"></span>
+                </div>
+                <h4 id="q-text" class="text-xl font-semibold mb-6"></h4>
+                <div id="q-options" class="space-y-3"></div>
+            </div>
+
+            <div id="quiz-results" class="hidden text-center">
+                <h3 class="text-2xl font-bold">Parabéns, <span id="r-name"></span>!</h3>
+                <div class="text-6xl font-bold text-emerald-700 my-4" id="r-score"></div>
+                <p id="r-text" class="mb-6"></p>
+                <button onclick="restartQuiz()" class="px-6 py-3 border border-emerald-700 rounded-3xl">Refazer</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Menu Mobile
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Rolagem suave + fecha menu mobile
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    
+                    // Fecha menu mobile se estiver aberto
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    const offset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Quiz
+        let current = 0, score = 0, userName = "";
+        const questions = [
+            {q: "O que é agricultura de precisão?", o: ["Usar tecnologia para aplicar insumos só onde necessário", "Plantar sem tecnologia", "Usar só fertilizantes químicos", "Evitar máquinas"], c: 0},
+            {q: "Qual prática melhora o solo?", o: ["Monocultura", "Rotação de culturas", "Queimar resíduos", "Só defensivos"], c: 1},
+            {q: "O que significa ILPF?", o: ["Instituto de Lavoura", "Integração Lavoura-Pecuária-Floresta", "Irrigação Lenta", "Indústria de Laticínios"], c: 1},
+            {q: "Benefício de produção + sustentabilidade?", o: ["Lucro curto prazo", "Produtividade duradoura + proteção do planeta", "Menos produção", "Mais defensivos"], c: 1},
+            {q: "O que reduz emissões?", o: ["Mais diesel", "Sequestro de carbono + energia renovável", "Desmatar", "Evitar tecnologia"], c: 1}
+        ];
+
+        function startQuiz() {
+            userName = document.getElementById('user-name').value.trim() || "Amigo";
+            current = 0; score = 0;
+            document.getElementById('quiz-start').classList.add('hidden');
+            document.getElementById('quiz-question').classList.remove('hidden');
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const data = questions[current];
+            document.getElementById('q-number').innerHTML = `Pergunta ${current+1}/5`;
+            document.getElementById('q-text').innerHTML = data.q;
+            document.getElementById('q-score').innerHTML = `${score}/5`;
+            const box = document.getElementById('q-options');
+            box.innerHTML = '';
+            data.o.forEach((opt, i) => {
+                const b = document.createElement('button');
+                b.className = 'w-full text-left p-4 border rounded-2xl hover:bg-emerald-50';
+                b.innerHTML = opt;
+                b.onclick = () => checkAnswer(i, b, box, data.c);
+                box.appendChild(b);
+            });
+        }
+
+        function checkAnswer(sel, btn, box, correct) {
+            const all = box.querySelectorAll('button');
+            all.forEach(b => b.disabled = true);
+            if (sel === correct) { score++; btn.classList.add('bg-emerald-100', 'border-emerald-600'); }
+            else { btn.classList.add('bg-red-100', 'border-red-400'); all[correct].classList.add('bg-emerald-100', 'border-emerald-600'); }
+            setTimeout(() => { current++; current < questions.length ? showQuestion() : showResult(); }, 1200);
+        }
+
+        function showResult() {
+            document.getElementById('quiz-question').classList.add('hidden');
+            document.getElementById('quiz-results').classList.remove('hidden');
+            document.getElementById('r-name').innerHTML = userName;
+            document.getElementById('r-score').innerHTML = `${score}/5`;
+            document.getElementById('r-text').innerHTML = score === 5 ? "Excelente! Você é especialista!" : score >= 3 ? "Muito bom! Continue aprendendo." : "Obrigado por participar!";
+        }
+
+        function restartQuiz() {
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('quiz-start').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
